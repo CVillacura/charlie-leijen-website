@@ -6,7 +6,7 @@
   --muted: #747168;
   --line: #d9d4ca;
   --panel: #ebe5da;
-  --max: 1520px;
+  --max: 1320px;
 }
 
 * { box-sizing: border-box; }
@@ -22,11 +22,11 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 
 .site-header, main, .site-footer {
-  width: min(calc(100% - 72px), var(--max));
+  width: min(calc(100% - 48px), var(--max));
   margin-inline: auto;
 }
 .site-header {
-  min-height: 58px;
+  min-height: 62px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -35,33 +35,33 @@ img { max-width: 100%; display: block; }
 .brand {
   text-transform: uppercase;
   letter-spacing: .16em;
-  font-size: .68rem;
+  font-size: .9rem;
   font-weight: 500;
 }
-.nav { display: flex; gap: 1.7rem; font-size: .68rem; text-transform: uppercase; letter-spacing: .12em; }
+.nav { display: flex; gap: 2rem; font-size: .78rem; text-transform: uppercase; letter-spacing: .12em; }
 .nav a { padding-block: 8px; border-bottom: 1px solid transparent; }
 .nav a:hover, .nav a.active { border-color: var(--ink); }
 .menu-toggle { display: none; border: 0; background: none; font: inherit; }
 
 .hero {
   display: grid;
-  grid-template-columns: 0.54fr 1.46fr;
-  min-height: 350px;
+  grid-template-columns: .78fr 1.35fr;
+  min-height: 430px;
   border-bottom: 1px solid var(--line);
 }
 .hero-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2.3rem 3rem 2.3rem 2.6rem;
+  padding: 2.75rem 3.25rem 2.75rem 0;
 }
 h1, h2, h3 { font-weight: 400; margin-top: 0; }
 h1, h2 {
   font-family: "Libre Caslon Display", Georgia, serif;
   line-height: 1.08;
 }
-h1 { font-size: clamp(2.2rem, 3.2vw, 3.85rem); letter-spacing: -.035em; margin-bottom: 2rem; }
-h2 { font-size: clamp(1.75rem, 2.4vw, 2.75rem); letter-spacing: -.025em; }
+h1 { font-size: clamp(2.35rem, 4vw, 4.3rem); letter-spacing: -.035em; margin-bottom: 2rem; }
+h2 { font-size: clamp(1.9rem, 3vw, 3.25rem); letter-spacing: -.025em; }
 h3 { font-size: 1rem; margin: .9rem 0 .15rem; }
 p { color: var(--muted); }
 .eyebrow {
@@ -71,7 +71,7 @@ p { color: var(--muted); }
   color: var(--ink);
   margin-bottom: 1.2rem;
 }
-.intro, .lead { font-size: .86rem; max-width: 44rem; }
+.intro, .lead { font-size: .98rem; max-width: 44rem; }
 .text-link {
   display: inline-flex;
   align-items: center;
@@ -101,23 +101,23 @@ p { color: var(--muted); }
   letter-spacing: .12em;
   font-size: .68rem;
 }
-.hero-art { min-height: 350px; }
-.section { padding-block: 2.4rem; border-bottom: 1px solid var(--line); }
-.section-heading { display: flex; justify-content: space-between; gap: 1.7rem; align-items: end; margin-bottom: 1.3rem; }
+.hero-art { min-height: 430px; }
+.section { padding-block: 3.75rem; border-bottom: 1px solid var(--line); }
+.section-heading { display: flex; justify-content: space-between; gap: 2rem; align-items: end; margin-bottom: 1.75rem; }
 .section-heading h2 { margin-bottom: 0; }
-.works-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; align-items: start; }
+.works-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; align-items: start; }
 .work-card { display: block; }
 .work-card p { margin: 0; font-size: .82rem; }
 .work-card:hover .placeholder { filter: contrast(1.03); }
 .portrait { aspect-ratio: .78; }
-.landscape { aspect-ratio: 1.35; margin-top: 0; }
-.square { aspect-ratio: 1; margin-top: 0; }
+.landscape { aspect-ratio: 1.35; margin-top: 2.5rem; }
+.square { aspect-ratio: 1; margin-top: 1rem; }
 .about-preview { display: grid; grid-template-columns: 1.05fr 1fr; gap: 6vw; align-items: center; }
 .studio-photo { aspect-ratio: 4/5; }
 .about-copy { max-width: 610px; }
 .announcement { max-width: 900px; margin-left: 0; }
 .site-footer {
-  min-height: 145px;
+  min-height: 180px;
   display: grid;
   grid-template-columns: 1fr auto auto;
   gap: 4rem;
@@ -125,9 +125,9 @@ p { color: var(--muted); }
   font-size: .85rem;
 }
 .site-footer p { margin: .25rem 0; }
-.footer-links { display: flex; gap: 1rem; }
+.footer-links { display: flex; gap: 1.2rem; }
 
-.page { padding-block: 3.5rem 5rem; }
+.page { padding-block: 4.5rem 6rem; }
 .page-header { max-width: 850px; margin-bottom: 3.5rem; }
 .page-header p:last-child { font-size: 1.08rem; }
 .works-page { grid-template-columns: repeat(3, 1fr); }
@@ -136,7 +136,7 @@ p { color: var(--muted); }
 .timeline article {
   display: grid;
   grid-template-columns: 140px 1fr;
-  gap: 1.7rem;
+  gap: 2rem;
   padding: 2rem 0;
   border-top: 1px solid var(--line);
 }
@@ -173,14 +173,14 @@ dd { margin: 0; }
   .about-preview, .split-page, .artwork-detail { grid-template-columns: 1fr; }
   .artwork-info { position: static; }
   .artwork-main, .tall { min-height: 520px; }
-  .site-footer { grid-template-columns: 1fr; gap: 1rem; padding-block: 3rem; }
+  .site-footer { grid-template-columns: 1fr; gap: 1.2rem; padding-block: 3rem; }
 }
 @media (max-width: 560px) {
   .works-grid, .works-page { grid-template-columns: 1fr; }
   .landscape, .square { margin-top: 0; }
-  .section { padding-block: 2.4rem; }
+  .section { padding-block: 3.75rem; }
   .section-heading { display: block; }
-  .section-heading .text-link { margin-top: 0; }
+  .section-heading .text-link { margin-top: 1rem; }
   .hero-art { min-height: 360px; }
   h1 { font-size: 3.3rem; }
 }
@@ -199,70 +199,3 @@ dd { margin: 0; }
 .hero-copy .intro { margin-block: 0; }
 .hero-copy .text-link { margin-top: .9rem; }
 .section-heading h2 { line-height: 1; }
-
-/* Mockup-matched compact layout */
-.site-header {
-  padding-inline: 0;
-}
-.hero {
-  max-height: 350px;
-}
-.hero-copy {
-  justify-content: center;
-}
-.hero-copy .eyebrow {
-  margin-bottom: .55rem;
-  font-size: .62rem;
-}
-.hero-copy h1 {
-  max-width: 8ch;
-  margin-bottom: .9rem;
-}
-.hero-copy .intro {
-  max-width: 28rem;
-  margin: 0;
-  line-height: 1.45;
-}
-.hero-copy .text-link {
-  margin-top: .8rem;
-}
-.section-heading {
-  align-items: center;
-}
-.section-heading h2 {
-  margin-bottom: 0;
-}
-.works-grid {
-  align-items: start;
-}
-.work-card .placeholder {
-  min-height: 0;
-}
-.work-card h3 {
-  font-size: .82rem;
-  margin: .5rem 0 .05rem;
-}
-.work-card p {
-  font-size: .66rem;
-  line-height: 1.35;
-}
-.portrait, .landscape, .square {
-  aspect-ratio: 1.28;
-  margin-top: 0;
-}
-.placeholder span {
-  font-size: .58rem;
-  padding: .4rem .6rem;
-}
-.section-heading .eyebrow {
-  margin-bottom: .45rem;
-}
-.text-link {
-  font-size: .66rem;
-  margin-top: 1rem;
-}
-@media (min-width: 901px) {
-  .section:first-of-type {
-    padding-top: 1.9rem;
-  }
-}
