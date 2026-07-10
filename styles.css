@@ -26,7 +26,7 @@ img { max-width: 100%; display: block; }
   margin-inline: auto;
 }
 .site-header {
-  min-height: 72px;
+  min-height: 62px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,22 +45,22 @@ img { max-width: 100%; display: block; }
 
 .hero {
   display: grid;
-  grid-template-columns: .8fr 1.35fr;
-  min-height: 520px;
+  grid-template-columns: .78fr 1.35fr;
+  min-height: 430px;
   border-bottom: 1px solid var(--line);
 }
 .hero-copy {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3.75rem 4rem 3.75rem 0;
+  padding: 2.75rem 3.25rem 2.75rem 0;
 }
 h1, h2, h3 { font-weight: 400; margin-top: 0; }
 h1, h2 {
   font-family: "Libre Caslon Display", Georgia, serif;
   line-height: 1.08;
 }
-h1 { font-size: clamp(2.6rem, 4.6vw, 4.9rem); letter-spacing: -.035em; margin-bottom: 2rem; }
+h1 { font-size: clamp(2.35rem, 4vw, 4.3rem); letter-spacing: -.035em; margin-bottom: 2rem; }
 h2 { font-size: clamp(1.9rem, 3vw, 3.25rem); letter-spacing: -.025em; }
 h3 { font-size: 1rem; margin: .9rem 0 .15rem; }
 p { color: var(--muted); }
@@ -101,9 +101,9 @@ p { color: var(--muted); }
   letter-spacing: .12em;
   font-size: .68rem;
 }
-.hero-art { min-height: 520px; }
-.section { padding-block: 5rem; border-bottom: 1px solid var(--line); }
-.section-heading { display: flex; justify-content: space-between; gap: 2rem; align-items: end; margin-bottom: 2.25rem; }
+.hero-art { min-height: 430px; }
+.section { padding-block: 3.75rem; border-bottom: 1px solid var(--line); }
+.section-heading { display: flex; justify-content: space-between; gap: 2rem; align-items: end; margin-bottom: 1.75rem; }
 .section-heading h2 { margin-bottom: 0; }
 .works-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.2rem; align-items: start; }
 .work-card { display: block; }
@@ -178,7 +178,7 @@ dd { margin: 0; }
 @media (max-width: 560px) {
   .works-grid, .works-page { grid-template-columns: 1fr; }
   .landscape, .square { margin-top: 0; }
-  .section { padding-block: 5rem; }
+  .section { padding-block: 3.75rem; }
   .section-heading { display: block; }
   .section-heading .text-link { margin-top: 1rem; }
   .hero-art { min-height: 360px; }
@@ -192,3 +192,10 @@ dd { margin: 0; }
 .work-card h3 { margin-top: .7rem; }
 .work-card p { font-size: .76rem; }
 .section-heading .eyebrow { margin-bottom: .75rem; }
+
+/* Further compact homepage refinement */
+.hero-copy .eyebrow { margin-bottom: .65rem; }
+.hero-copy h1 { margin-bottom: 1rem; }
+.hero-copy .intro { margin-block: 0; }
+.hero-copy .text-link { margin-top: .9rem; }
+.section-heading h2 { line-height: 1; }
