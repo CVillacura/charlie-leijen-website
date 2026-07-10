@@ -384,3 +384,30 @@ dd { margin: 0; }
 .filter-controls .collection-filters {
   margin: 1.25rem 0 0;
 }
+
+/* Circular artist logo */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: .9rem;
+}
+
+.brand-logo {
+  width: 38px;
+  height: 38px;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 560px) {
+  .brand-logo {
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand span {
+    font-size: .78rem;
+  }
+}
