@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Works — Charlie Leijen</title>
-  <meta name="description" content="Selected works by Charlie Leijen.">
+  <meta name="description" content="Selected works by Charlie Leijen, grouped by year and collection.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
+<header class="site-header">
     <a class="brand" href="index.html">Charlie Leijen</a>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
     <nav class="nav" aria-label="Primary navigation">
@@ -34,22 +34,77 @@
       </a>
     </div>
   </header>
-  <main class="page">
-    <header class="page-header">
-      <p class="eyebrow">Portfolio</p>
-      <h1>Works</h1>
-      <p>A selection of works across different materials, techniques, and periods.</p>
-    </header>
-    <section class="works-grid works-page">
-      <a class="work-card" href="artwork.html"><div class="placeholder portrait"><span>Artwork 01</span></div><h3>Untitled I</h3><p>Mixed media · 2026</p></a>
-      <a class="work-card" href="artwork.html"><div class="placeholder landscape"><span>Artwork 02</span></div><h3>Untitled II</h3><p>Technique to be added · 2026</p></a>
-      <a class="work-card" href="artwork.html"><div class="placeholder square"><span>Artwork 03</span></div><h3>Untitled III</h3><p>Mixed media · 2025</p></a>
-      <a class="work-card" href="artwork.html"><div class="placeholder portrait"><span>Artwork 04</span></div><h3>Untitled IV</h3><p>Technique to be added · 2025</p></a>
-      <a class="work-card" href="artwork.html"><div class="placeholder square"><span>Artwork 05</span></div><h3>Untitled V</h3><p>Technique to be added · 2025</p></a>
-      <a class="work-card" href="artwork.html"><div class="placeholder landscape"><span>Artwork 06</span></div><h3>Untitled VI</h3><p>Mixed media · 2024</p></a>
+<main class="page">
+  <header class="page-header">
+    <p class="eyebrow">Portfolio</p>
+    <h1>Works</h1>
+    <p>A selection of works grouped chronologically. Use the filters to view a collection.</p>
+  </header>
+  <div class="collection-filters" aria-label="Filter works by collection">
+    <button class="filter-button active" data-filter="all">All works</button><button class="filter-button" data-filter="earlier-works">Earlier Works</button><button class="filter-button" data-filter="material-studies">Material Studies</button><button class="filter-button" data-filter="quiet-forms">Quiet Forms</button><button class="filter-button" data-filter="uncollected">Uncollected</button>
+  </div>
+  
+    <section class="year-group" data-year="2026">
+      <div class="year-heading"><h2>2026</h2></div>
+      <div class="works-grid works-page">
+        <a class="work-card portfolio-item" data-collection="material-studies" href="artworks/untitled-i.html">
+          <div class="placeholder work-thumb"><span>Artwork 01</span></div>
+          <h3>Untitled I</h3>
+          <p>Mixed media · 2026</p>
+          <p class="collection-label">Material Studies</p>
+        </a>
+        <a class="work-card portfolio-item" data-collection="material-studies" href="artworks/untitled-ii.html">
+          <div class="placeholder work-thumb"><span>Artwork 02</span></div>
+          <h3>Untitled II</h3>
+          <p>Technique to be added · 2026</p>
+          <p class="collection-label">Material Studies</p>
+        </a></div>
     </section>
-  </main>
-  <footer class="site-footer"><div><strong>Charlie Leijen</strong><p>Artist - Illustrator & Designer</p></div><div class="footer-links"><a href="contact.html">Contact</a><a href="#">Instagram</a></div><p>© <span id="year"></span> Charlie Leijen</p></footer>
-  <script src="script.js"></script>
+    <section class="year-group" data-year="2025">
+      <div class="year-heading"><h2>2025</h2></div>
+      <div class="works-grid works-page">
+        <a class="work-card portfolio-item" data-collection="quiet-forms" href="artworks/untitled-iii.html">
+          <div class="placeholder work-thumb"><span>Artwork 03</span></div>
+          <h3>Untitled III</h3>
+          <p>Mixed media · 2025</p>
+          <p class="collection-label">Quiet Forms</p>
+        </a>
+        <a class="work-card portfolio-item" data-collection="quiet-forms" href="artworks/untitled-iv.html">
+          <div class="placeholder work-thumb"><span>Artwork 04</span></div>
+          <h3>Untitled IV</h3>
+          <p>Technique to be added · 2025</p>
+          <p class="collection-label">Quiet Forms</p>
+        </a>
+        <a class="work-card portfolio-item" data-collection="uncollected" href="artworks/untitled-v.html">
+          <div class="placeholder work-thumb"><span>Artwork 05</span></div>
+          <h3>Untitled V</h3>
+          <p>Technique to be added · 2025</p>
+          <p class="collection-label">Uncollected</p>
+        </a></div>
+    </section>
+    <section class="year-group" data-year="2024">
+      <div class="year-heading"><h2>2024</h2></div>
+      <div class="works-grid works-page">
+        <a class="work-card portfolio-item" data-collection="earlier-works" href="artworks/untitled-vi.html">
+          <div class="placeholder work-thumb"><span>Artwork 06</span></div>
+          <h3>Untitled VI</h3>
+          <p>Mixed media · 2024</p>
+          <p class="collection-label">Earlier Works</p>
+        </a></div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div>
+      <strong>Charlie Leijen</strong>
+      <p>Multidisciplinary artist</p>
+    </div>
+    <div class="footer-links">
+      <a href="contact.html">Contact</a>
+      <a href="#" aria-label="Instagram placeholder">Instagram</a>
+    </div>
+    <p>© <span id="year"></span> Charlie Leijen</p>
+  </footer>
+<script src="script.js"></script>
+<script src="portfolio.js"></script>
 </body>
 </html>

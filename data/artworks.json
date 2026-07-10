@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "untitled-i",
+    "title": "Untitled I",
+    "year": 2026,
+    "collection": "Material Studies",
+    "medium": "Mixed media",
+    "dimensions": "80 \u00d7 100 cm",
+    "description": "Placeholder description for the artwork. This text can later be replaced with Charlie's own notes about the work, process, materials, or context.",
+    "images": [
+      "Artwork 01",
+      "Detail 01",
+      "Detail 02"
+    ],
+    "featured": true,
+    "availability": "Inquire"
+  },
+  {
+    "slug": "untitled-ii",
+    "title": "Untitled II",
+    "year": 2026,
+    "collection": "Material Studies",
+    "medium": "Technique to be added",
+    "dimensions": "Dimensions to be added",
+    "description": "Placeholder description for the artwork.",
+    "images": [
+      "Artwork 02",
+      "Detail 01"
+    ],
+    "featured": true,
+    "availability": "Inquire"
+  },
+  {
+    "slug": "untitled-iii",
+    "title": "Untitled III",
+    "year": 2025,
+    "collection": "Quiet Forms",
+    "medium": "Mixed media",
+    "dimensions": "Dimensions to be added",
+    "description": "Placeholder description for the artwork.",
+    "images": [
+      "Artwork 03",
+      "Detail 01"
+    ],
+    "featured": true,
+    "availability": "Private collection"
+  },
+  {
+    "slug": "untitled-iv",
+    "title": "Untitled IV",
+    "year": 2025,
+    "collection": "Quiet Forms",
+    "medium": "Technique to be added",
+    "dimensions": "Dimensions to be added",
+    "description": "Placeholder description for the artwork.",
+    "images": [
+      "Artwork 04"
+    ],
+    "featured": true,
+    "availability": "Inquire"
+  },
+  {
+    "slug": "untitled-v",
+    "title": "Untitled V",
+    "year": 2025,
+    "collection": null,
+    "medium": "Technique to be added",
+    "dimensions": "Dimensions to be added",
+    "description": "Placeholder description for the artwork.",
+    "images": [
+      "Artwork 05",
+      "Detail 01"
+    ],
+    "featured": false,
+    "availability": "Not available"
+  },
+  {
+    "slug": "untitled-vi",
+    "title": "Untitled VI",
+    "year": 2024,
+    "collection": "Earlier Works",
+    "medium": "Mixed media",
+    "dimensions": "Dimensions to be added",
+    "description": "Placeholder description for the artwork.",
+    "images": [
+      "Artwork 06",
+      "Detail 01"
+    ],
+    "featured": false,
+    "availability": "Inquire"
+  }
+  {
+    "slug": "untitled-vii",
+    "title": "Untitled VII",
+    "year": 2028,
+    "collection": "Earlier Works",
+    "medium": "all",
+    "dimensions": "Dimensions to be added",
+    "description": "Placeholder description for the artwork.",
+    "images": [
+      "Artwork 01",
+      "Detail 01"
+    ],
+    "featured": false,
+    "availability": "Inquire"
+  }
+]
