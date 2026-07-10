@@ -40,12 +40,20 @@
     <h1>Works</h1>
     <p>A selection of works grouped chronologically. Use the filters to view a collection.</p>
   </header>
-  <div class="collection-filters" aria-label="Filter works by collection">
-    <button class="filter-button active" data-filter="all">All works</button><button class="filter-button" data-filter="earlier-works">Earlier Works</button><button class="filter-button" data-filter="material-studies">Material Studies</button><button class="filter-button" data-filter="quiet-forms">Quiet Forms</button><button class="filter-button" data-filter="uncollected">Uncollected</button>
+  <div class="filter-controls">
+    <button class="filter-toggle" type="button" aria-expanded="false" aria-controls="collection-filters">
+      Filter <span aria-hidden="true">+</span>
+    </button>
+    <div class="collection-filters" id="collection-filters" aria-label="Filter works by collection" hidden>
+      <button class="filter-button active" data-filter="all">All works</button>
+      <button class="filter-button" data-filter="earlier-works">Earlier Works</button>
+      <button class="filter-button" data-filter="material-studies">Material Studies</button>
+      <button class="filter-button" data-filter="quiet-forms">Quiet Forms</button>
+      <button class="filter-button" data-filter="uncollected">Uncollected</button>
+    </div>
   </div>
   
     <section class="year-group" data-year="2026">
-      <div class="year-heading"><h2>2026</h2></div>
       <div class="works-grid works-page">
         <a class="work-card portfolio-item" data-collection="material-studies" href="artworks/untitled-i.html">
           <div class="placeholder work-thumb"><span>Artwork 01</span></div>
@@ -61,7 +69,6 @@
         </a></div>
     </section>
     <section class="year-group" data-year="2025">
-      <div class="year-heading"><h2>2025</h2></div>
       <div class="works-grid works-page">
         <a class="work-card portfolio-item" data-collection="quiet-forms" href="artworks/untitled-iii.html">
           <div class="placeholder work-thumb"><span>Artwork 03</span></div>
@@ -83,7 +90,6 @@
         </a></div>
     </section>
     <section class="year-group" data-year="2024">
-      <div class="year-heading"><h2>2024</h2></div>
       <div class="works-grid works-page">
         <a class="work-card portfolio-item" data-collection="earlier-works" href="artworks/untitled-vi.html">
           <div class="placeholder work-thumb"><span>Artwork 06</span></div>

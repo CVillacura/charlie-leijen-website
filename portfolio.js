@@ -1,3 +1,16 @@
+const filterToggle = document.querySelector('.filter-toggle');
+const filterPanel = document.querySelector('#collection-filters');
+
+if (filterToggle && filterPanel) {
+  filterToggle.addEventListener('click', () => {
+    const isOpen = filterToggle.getAttribute('aria-expanded') === 'true';
+    filterToggle.setAttribute('aria-expanded', String(!isOpen));
+    filterPanel.hidden = isOpen;
+    const symbol = filterToggle.querySelector('span');
+    if (symbol) symbol.textContent = isOpen ? '+' : '−';
+  });
+}
+
 const buttons = document.querySelectorAll('.filter-button');
 const items = document.querySelectorAll('.portfolio-item');
 const groups = document.querySelectorAll('.year-group');

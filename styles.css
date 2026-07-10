@@ -296,16 +296,7 @@ dd { margin: 0; }
   border-color: var(--ink);
 }
 .year-group {
-  padding: 0 0 5rem;
-}
-.year-heading {
-  border-top: 1px solid var(--line);
-  padding-top: 1.25rem;
-  margin-bottom: 2rem;
-}
-.year-heading h2 {
-  font-size: clamp(2rem, 3vw, 3.3rem);
-  margin: 0;
+  padding: 0 0 2rem;
 }
 .collection-label {
   color: var(--ink) !important;
@@ -353,4 +344,43 @@ dd { margin: 0; }
   .artwork-pagination a:last-child {
     text-align: left;
   }
+}
+
+/* Chronological ordering without visible year headings */
+.year-group + .year-group {
+  margin-top: 1rem;
+}
+
+/* Collapsible collection filters */
+.filter-controls {
+  margin: -1rem 0 3rem;
+}
+
+.filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  border: 0;
+  border-bottom: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  padding: 0 0 .3rem;
+  font: inherit;
+  font-size: .76rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.filter-toggle span {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.collection-filters[hidden] {
+  display: none;
+}
+
+.filter-controls .collection-filters {
+  margin: 1.25rem 0 0;
 }

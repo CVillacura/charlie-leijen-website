@@ -89,19 +89,4 @@
     "featured": false,
     "availability": "Inquire"
   }
-  {
-    "slug": "untitled-vii",
-    "title": "Untitled VII",
-    "year": 2028,
-    "collection": "Earlier Works",
-    "medium": "all",
-    "dimensions": "Dimensions to be added",
-    "description": "Placeholder description for the artwork.",
-    "images": [
-      "Artwork 01",
-      "Detail 01"
-    ],
-    "featured": false,
-    "availability": "Inquire"
-  }
 ]
