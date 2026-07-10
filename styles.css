@@ -411,3 +411,10 @@ dd { margin: 0; }
     font-size: .78rem;
   }
 }
+.studio-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
