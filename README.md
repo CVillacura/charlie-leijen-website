@@ -15,3 +15,13 @@ Examples:
 - `contact-studio.svg` — Contact-page studio image
 
 You may upload a JPG or WebP instead, but then update only the `src` filename in the relevant HTML file. Never remove the surrounding image container.
+
+## Exhibition images
+
+Replace these files inside `assets/images/` with real images, or update the matching `src` values in `exhibitions.html`:
+
+- `exhibition-01.svg`
+- `exhibition-02.svg`
+- `exhibition-03.svg`
+
+WebP is recommended for real exhibition photographs.
