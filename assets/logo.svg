@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
-  <title id="title">Charlie Leijen monogram</title>
-  <circle cx="50" cy="50" r="46" fill="#2b2930"/>
-  <circle cx="50" cy="50" r="42" fill="none" stroke="#f7f4ee" stroke-width="2"/>
-  <text x="50" y="58" text-anchor="middle"
-        font-family="Georgia, serif" font-size="34" fill="#f7f4ee">CL</text>
-</svg>
