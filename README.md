@@ -1,12 +1,17 @@
-# Charlie Leijen portfolio
+# Charlie Leijen portfolio — stable image version
 
-This version includes:
+All image locations now contain permanent `<img>` elements. Do not delete the surrounding `<div>` containers.
 
-- Works grouped by year
-- Optional collection filters
-- Separate artwork pages
-- Multiple image placeholders per artwork
-- Previous/next navigation
-- A central artwork data file at `data/artworks.json`
+## Easiest way to replace an image
 
-For now, the HTML pages are pre-generated from the data. A CMS can be connected later so Charlie can add works through a visual form.
+Replace the relevant file in `assets/images/` while keeping the same filename. This requires no HTML editing.
+
+Examples:
+
+- `about-portrait.svg` — About-page portrait
+- `hero-featured.svg` — homepage featured image
+- `artwork-01-main.svg` — first artwork thumbnail and main image
+- `artwork-01-detail-01.svg` — first artwork detail image
+- `contact-studio.svg` — Contact-page studio image
+
+You may upload a JPG or WebP instead, but then update only the `src` filename in the relevant HTML file. Never remove the surrounding image container.

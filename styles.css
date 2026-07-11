@@ -411,10 +411,26 @@ dd { margin: 0; }
     font-size: .78rem;
   }
 }
-.studio-photo img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center;
-}
+
+
+/* Stable image containers: only change the img src or replace the file itself. */
+.image-frame { overflow: hidden; background: var(--panel); }
+.image-frame img { width: 100%; height: 100%; display: block; }
+.hero-art img,
+.work-thumb img,
+.studio-photo img,
+.contact-image img { object-fit: cover; object-position: center; }
+.studio-photo img { object-position: center top; }
+.artwork-main img,
+.artwork-detail-image img { object-fit: contain; object-position: center; }
+.about-text { max-width: 620px; }
+.about-text h1 { margin-bottom: 2rem; }
+.about-text p { margin-bottom: 1.5rem; }
+.contact-image { min-height: 560px; }
+
+/* Keep card thumbnails identical regardless of source image proportions. */
+.work-thumb { aspect-ratio: 4 / 3; width: 100%; min-height: 0; }
+
+/* Full artwork image areas preserve the complete artwork. */
+.artwork-main { min-height: 620px; }
+.artwork-detail-image { aspect-ratio: 4 / 3; min-height: 0; }
